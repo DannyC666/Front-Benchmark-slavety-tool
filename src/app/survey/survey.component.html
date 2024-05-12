@@ -1,12 +1,19 @@
-<!-- <div>
+
+<div>
   <h1>Survey Questions</h1>
   <ul>
-    <div *ngFor="let question of questions">
-      <p>{{ question.statement }}</p>
-      <p>{{ question.asociated_risk }}</p>
-      <p>{{ question.type_question }}</p>
+    @for (question of questions; track question) {
+    <div>
+      @if ( question.typeQuestion.localeCompare("sapo")) {
+
+        <p>{{ question.statement }}</p>
+        <p>{{ question.questionConfig }}</p>
+      }
+    
       
+      <!-- <p>{{ question.asociated_risk }}</p>
+      <p>{{ question.type_question }}</p> -->
     </div>
+    }
   </ul>
-</div> -->
-<h1> Sexo anal</h1>
+</div>

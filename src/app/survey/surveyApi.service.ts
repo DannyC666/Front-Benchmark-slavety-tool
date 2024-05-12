@@ -10,11 +10,9 @@ const baseUrl = 'http://127.0.0.1:8000/survey_questions/';
   providedIn: 'root'
 })
 export class SurveyApiService {
-
-  
-
 constructor(private http: HttpClient ) { }
 getAll(): Observable<SurveyQuestion[]> {
+  console.log(this.http.get<SurveyQuestion[]>(baseUrl))
   return this.http.get<SurveyQuestion[]>(baseUrl);
 }
 }

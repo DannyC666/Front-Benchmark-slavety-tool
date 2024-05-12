@@ -14,14 +14,13 @@ export class SurveyComponent implements OnInit {
 
   getQuestions():void {
     this.surveyService.getAll().subscribe((questions) =>{
-      this.questions = this.questions;
+      this.questions = questions;
+      console.log
     });
+    console.log(this.questions)
   }
     
- 
-
   ngOnInit() {
     this.getQuestions;  
   }
-
 }

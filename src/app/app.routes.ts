@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
 import { SurveyComponent } from './survey/survey.component';
 
-const routeConfig: Routes = [
+const routes: Routes = [
 
     { path: 'survey', component: SurveyComponent },
     // Otras rutas...
   ];
   
-  export { routeConfig }; // Exporta las rutas
+  export { routes }; // Exporta las rutas

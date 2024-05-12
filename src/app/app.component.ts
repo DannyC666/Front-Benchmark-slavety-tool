@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { RouterModule } from '@angular/router';
-import { SurveyComponent } from './survey/survey.component';
 
 @Component({
   selector: 'app-root',
